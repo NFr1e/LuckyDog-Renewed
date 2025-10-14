@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b8001c211cfe8942b996134729c701b, type: 3}
+  m_Name: CanvasElementData
+  m_EditorClassIdentifier: 
+  Pages:
+  - PageObject: {fileID: 2453541958530641035, guid: b266bdff4d00b4843bb78f9d867d5790, type: 3}
+    PageKey: pages.main
+  - PageObject: {fileID: 7078613512321824943, guid: 6baa722d1f5332a458dc7c66c61745b4, type: 3}
+    PageKey: pages.lists
+  - PageObject: {fileID: 5786646866860929144, guid: 2712f2ef09dc89a46bdef2d6a2b6d68f, type: 3}
+    PageKey: pages.edit
+  - PageObject: {fileID: 657474420347536546, guid: 347311ac9d458dc4b8547fc8522b74b4, type: 3}
+    PageKey: pages.options
+  - PageObject: {fileID: 2294357912069085619, guid: d261a6c680c1d1a44a25630a1a806a01, type: 3}
+    PageKey: pages.resolutions
+  - PageObject: {fileID: 3132520168859684114, guid: 835e4edde8e237844936e4522368ed50, type: 3}
+    PageKey: pages.safearea
+  - PageObject: {fileID: 5125289018617365193, guid: bf17bb1a044ace84285c9620b8a5df46, type: 3}
+    PageKey: pages.plugins
+  Tips:
+  - TipObject: {fileID: 5081097214352479920, guid: 2d32e8eef61e3c74ea7e5ed24181bbc4, type: 3}
+    TipKey: tips.none
+  - TipObject: {fileID: 1611968459365020826, guid: b57943742756d7043bcc523c65ed04e1, type: 3}
+    TipKey: tips.success
+  - TipObject: {fileID: 4805962097543256273, guid: ec8618f6a0ab76f458562022b1c7ef22, type: 3}
+    TipKey: tips.alert
+  Modals:
+  - ModalObject: {fileID: 1743222444258689056, guid: d93aa6c081df1d840872011062176fdb, type: 3}
+    ModalKey: modals.default
+  - ModalObject: {fileID: 395047543780034165, guid: c8d2aee41bfaaa24b8347bceb369ac86, type: 3}
+    ModalKey: modals.alert
+  - ModalObject: {fileID: 6680572368082684786, guid: 8a070f54e726de34c9294730c226171d, type: 3}
+    ModalKey: modals.error

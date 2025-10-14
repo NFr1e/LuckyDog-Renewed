@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e80f3a255081a0648adbe0135d4bb3ff, type: 3}
+  m_Name: UserPrefs
+  m_EditorClassIdentifier: 
+  HasSaved: 1
+  UseFullScreen: 1
+  UseSplashScreen: 0
+  UseVsync: 1
+  UseSafeArea: 0
+  UseEffect: 1
+  TargetFrameRate: 240
+  TargetRefreshRate: 240
+  PreferredStartPageIndex: 0
+  LastScreenWidth: 1920
+  LastScreenHeight: 1080
+  SafeAreaSize: 100
+  LuckyDogRollTimes: 30
+  LuckyDogRollInterval: 0.02
