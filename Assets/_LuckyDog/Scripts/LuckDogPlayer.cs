@@ -15,7 +15,7 @@ namespace LuckyDog
 
         public DOTweenSequence playAnim;
 
-        public Text displayer,curListNameText;
+        public Text displayer;
 
         private int rollTimes = 30;
         private float interval = 0.02f;
@@ -28,12 +28,7 @@ namespace LuckyDog
         {
             if (NameListManager.Instance.CurNameList == null)
             {
-                curListNameText.gameObject.SetActive(false);
                 displayer.text = "Empty Lists";
-            }
-            else
-            {
-                curListNameText.gameObject.SetActive(true);
             }
         }
 
@@ -52,18 +47,9 @@ namespace LuckyDog
         {
             if (list == null)
             {
-                curListNameText.gameObject.SetActive(false);
                 displayer.text = "Empty Lists";
 
                 return;
-            }
-            else
-            {
-                if (curListNameText)
-                {
-                    curListNameText.gameObject.SetActive(true);
-                    curListNameText.text = list.Name;
-                }
             }
         }
         public void ChangeRollingArgs()

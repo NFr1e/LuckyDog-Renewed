@@ -8,7 +8,7 @@ namespace App
     public class ErrorDebugger : Singleton<ErrorDebugger>
     {
         private string lastLog;
-        [SerializeField] private string errorModalId = "modals.error",alertModalId = "modals.alert";
+        [SerializeField] private string errorModalId = "modals.error",exceptionModalId = "modals.error",alertModalId = "modals.alert";
         private void Start()
         {
             Application.logMessageReceived += HandleLog;
@@ -32,6 +32,9 @@ namespace App
                         break;
                     case LogType.Error:
                         ModalManager.Instance.Load(errorModalId, $"{type}", $"{logString} \n{stackTrace}");
+                        break;
+                    case LogType.Exception:
+                        ModalManager.Instance.Load(exceptionModalId, $"{type}", $"{logString} \n{stackTrace}");
                         break;
                 }
             }

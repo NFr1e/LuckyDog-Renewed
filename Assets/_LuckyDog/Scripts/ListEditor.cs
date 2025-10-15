@@ -51,7 +51,7 @@ namespace LuckyDog
             targetNameList
                 .SetNameList(nameInput.text != string.Empty ? nameInput.text : "БъЬт", 
                             descInput.text != string.Empty ? descInput.text : $"{DateTime.Now}", 
-                            itemsInput.text);
+                            itemsInput.text != string.Empty ? itemsInput.text : $"A\nB");
             NameListManager.Instance.CurNameList = targetNameList;
 
             OnApply?.Invoke(targetNameList);

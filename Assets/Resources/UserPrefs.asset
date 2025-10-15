@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e80f3a255081a0648adbe0135d4bb3ff, type: 3}
   m_Name: UserPrefs
   m_EditorClassIdentifier: 
-  HasSaved: 1
+  HasSaved: 0
   UseFullScreen: 1
   UseSplashScreen: 0
   UseVsync: 1
   UseSafeArea: 0
   UseEffect: 1
-  TargetFrameRate: 240
-  TargetRefreshRate: 240
+  TargetFrameRate: 120
+  TargetRefreshRate: 120
   PreferredStartPageIndex: 0
-  LastScreenWidth: 1920
-  LastScreenHeight: 1080
+  LastScreenWidth: 0
+  LastScreenHeight: 0
   SafeAreaSize: 100
   LuckyDogRollTimes: 30
   LuckyDogRollInterval: 0.02

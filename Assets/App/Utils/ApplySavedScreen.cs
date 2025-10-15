@@ -17,13 +17,23 @@ namespace App.ScreenManagement
             
             if (userPrefs.HasSaved)
             {
+                if (userPrefs.LastScreenWidth == 0 || userPrefs.LastScreenHeight == 0) 
+                {
+                    Screen.SetResolution(fitResolution.width, fitResolution.height, Screen.fullScreen);
+                    Application.targetFrameRate = 120;
+                    return; 
+                }
+
                 Screen.SetResolution(userPrefs.LastScreenWidth, userPrefs.LastScreenHeight, Screen.fullScreen);
+
+                Application.targetFrameRate = userPrefs.TargetFrameRate;
             }
             else
             {
                 if (Screen.currentResolution.width != fitResolution.width || Screen.currentResolution.height != fitResolution.height)
                     Screen.SetResolution(fitResolution.width, fitResolution.height, Screen.fullScreen);
 
+                Application.targetFrameRate = 120;
             }
         }
     }

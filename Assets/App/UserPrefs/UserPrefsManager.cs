@@ -28,12 +28,14 @@ namespace App.User.Controller
         }
         private void LoadUserPrefs()
         {
+            UserPrefs.LoadPrefs();
+
             if (!UserPrefs.HasSaved)
             {
                 UserPrefs.SavePrefs();
             }
 
-            UserPrefs?.LoadPrefs();
+            UserPrefs.LoadPrefs();
 
             UserPrefsEvents.PrefsLoaded = true;
         }

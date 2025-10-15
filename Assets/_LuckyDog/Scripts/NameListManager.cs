@@ -24,8 +24,6 @@ namespace LuckyDog
         }
         private List<NameList> nameLists = new List<NameList>();
 
-        public static Action OnListChange;
-
         public NameList CurNameList
         {
             get
@@ -43,6 +41,7 @@ namespace LuckyDog
         }
         private NameList curNameList;
 
+        public static Action OnListChange;
         public static Action<NameList> OnCurNameListChange;
 
         public void SetCurNameList(NameList namelist)
